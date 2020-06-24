@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+	<padding>
+		<Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+	</padding>
+	<center>
+		<GridPane hgap="10.0" vgap="10.0">
+			<children>
+				<Label prefWidth="50" text="번호 : " />
+        	    <Label prefWidth="50" text="이름 : " GridPane.rowIndex="1" />
+				<Label prefWidth="50" text="학년 : " GridPane.rowIndex="2" />
+				<Label prefWidth="50" text="반 : " GridPane.rowIndex="3" />
+				<Label prefWidth="50" text="성별 : " GridPane.rowIndex="4" />
+				<Label prefWidth="50" text="국어 : " GridPane.rowIndex="5" />
+				<Label prefWidth="50" text="영어 : " GridPane.rowIndex="6" />
+				<Label prefWidth="50" text="수학 : " GridPane.rowIndex="7" />
+				<Label prefWidth="50" text="과학 : " GridPane.rowIndex="8" />
+				<Label prefWidth="50" text="사회 : " GridPane.rowIndex="9" />
+				<Label prefWidth="50" text="음악 : " GridPane.rowIndex="10" />
+				<Label prefWidth="50" text="총점 : " GridPane.rowIndex="11" />
+				<Label prefWidth="50" text="평균 : " GridPane.rowIndex="12" />
+
+				<TextField id="txtNo" prefWidth="100" GridPane.columnIndex="1" />
+            <TextField id="txtName" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+				<TextField id="txtYear" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+				<TextField id="txtBan" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+				<TextField id="txtGender" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+				<TextField id="txtKorean" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+				<TextField id="txtEnglish" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+				<TextField id="txtMath" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+				<TextField id="txtSic" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+				<TextField id="txtSoc" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+				<TextField id="txtMusic" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+				<TextField id="txtTotal" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+				<TextField id="txtAvg" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+			</children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+		</GridPane>
+	</center>
+	<bottom>
+		<HBox alignment="CENTER" spacing="20.0">
+			<BorderPane.margin>
+				<Insets bottom="10" top="20.0" />
+			</BorderPane.margin>
+			<children>
+			<Button id="btnCal" text="계산" />
+				<Button id="btnFormAdd" text="저장" />
+				<Button id="btnFormCancel" text="취소" />
+			</children>
+		</HBox>
+	</bottom>
+</BorderPane>
